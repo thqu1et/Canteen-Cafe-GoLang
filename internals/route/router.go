@@ -1,10 +1,14 @@
 package route
 
-import "net/http"
+import (
+	"github.com/gorilla/mux"
+	"net/http"
+),
+
 
 type router struct {
 	mux  *mux.Router
-	repo *repository.Repo
+	//repo *repository.Repo
 }
 
 func NewRouter(mux *mux.Router, repo *repository.Repo) {
